@@ -1,3 +1,15 @@
+Example usage (version 3.0.5):
+```
+docker run -d --name omada-controller \
+  -p 8088:8088 \
+  -p 8043:8043 \
+  -v omada-data:/opt/tplink/EAPController/data \
+  -v omada-work:/opt/tplink/EAPController/work \
+  -v omada-logs:/opt/tplink/EAPController/logs \
+  stshow/omada-controller:3.0.5
+```
+
+Forked from:
 mbentley/omada-controller
 =========================
 
